@@ -8,7 +8,7 @@
         <artifactId>parse</artifactId>
         <version>0.0.4</version>
     </parent>
-    <artifactId>timeout_code_injector</artifactId>
+    <artifactId>code_injector</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
     <repositories>
