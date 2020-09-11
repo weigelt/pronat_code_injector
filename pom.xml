@@ -74,6 +74,11 @@
             <groupId>org.kohsuke.metainf-services</groupId>
             <artifactId>metainf-services</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.jtwig</groupId>
+            <artifactId>jtwig-core</artifactId>
+            <version>5.87.0.RELEASE</version>
+        </dependency>
     </dependencies>
     <properties>
         <parse_bundle.directory>../parse_bundle</parse_bundle.directory>

@@ -1,0 +1,28 @@
+import edu.kit.ipd.lego.*;
+// {{ header }}
+
+class MyLegoRobot extends LegoRobot  {
+
+// {{ classHead }} 
+
+    public static void main(String[] args) {
+        LegoRobot robo = new MyLegoRobot();
+        try {
+            robo.execute();
+        } catch (Exception e) {
+            System.err.println("Error");
+        }
+        robo.close();
+    }
+
+@Override
+public void execute(){ 
+
+// {{ topComment }}
+// {{ code }}
+
+}
+
+// New Methods: {{newMethod}}
+
+}
