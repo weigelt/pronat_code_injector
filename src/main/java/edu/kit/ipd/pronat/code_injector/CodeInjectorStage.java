@@ -1,4 +1,4 @@
-package edu.kit.ipd.parse.code_injector;
+package edu.kit.ipd.pronat.code_injector;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -6,7 +6,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Properties;
 
-import edu.kit.ipd.parse.luna.data.PostPipelineData;
+import edu.kit.ipd.pronat.postpipelinedatamodel.PostPipelineData;
 import org.jtwig.JtwigModel;
 import org.jtwig.JtwigTemplate;
 import org.kohsuke.MetaInfServices;
@@ -49,7 +49,7 @@ public class CodeInjectorStage implements IPipelineStage {
 	@Override
 	public void exec(AbstractPipelineData data) throws PipelineStageException {
 		try {
-			appd = data.asPostPipelineData();
+			appd = (PostPipelineData) data.asPostPipelineData();
 			String code = appd.getCode();
 			if (appd.isMethod()) {
 				injectToAPI(code);
