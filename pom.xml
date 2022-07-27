@@ -11,13 +11,6 @@
     <artifactId>code_injector</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>Code Injector</name>
-    <repositories>
-        <repository>
-            <id>ipdNexus-public-all</id>
-            <name>IPD-Repository</name>
-            <url>https://bob.ipd.kit.edu/nexus/repository/maven-public-all/</url>
-        </repository>
-    </repositories>
     <build>
         <plugins>
             <plugin>
